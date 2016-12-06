@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@import "compass";
+@import "import";
+
+
+/*
+-----------------------------------------------------------------------
+base tags setting
+-----------------------------------------------------------------------
+*/
+
+* {
+	margin:0;
+	padding:0;
+	outline:none;
+	line-height:normal;
+	&,
+	&:after,
+	&:before {
+		@include box-sizing;
+	}
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+img {
+	border:none;
+	vertical-align:bottom;
+}
+
+iframe {
+	border:none;
+}
+
+ul, ol {
+	list-style:none;
+}
+
+br {
+	letter-spacing:0;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section,main {
+  display: block;
+}
+input, button, textarea, select {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}

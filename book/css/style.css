@@ -1,0 +1,1179 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+/*
+-----------------------------------------------------------------------
+base tags setting
+-----------------------------------------------------------------------
+*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  line-height: normal;
+}
+*, *:after, *:before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border: none;
+  vertical-align: bottom;
+}
+
+iframe {
+  border: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+br {
+  letter-spacing: 0;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+input, button, textarea, select {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/*
+-----------------------------------------------------------------------
+common
+-----------------------------------------------------------------------
+*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #333333;
+  background: #ecf2fb;
+  font-family: "Avenir Next", Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, li, dt, dd, th, td, p, address, select, option, input, textarea {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: "Avenir Next", Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+a {
+  color: #333333;
+  outline: none;
+  text-decoration: none;
+}
+a:hover {
+  color: #999999;
+}
+
+/*-- スペース共通 --*/
+.mr0 {
+  margin-right: 0px;
+}
+
+.ml0 {
+  margin-left: 0px;
+}
+
+.mb0 {
+  margin-bottom: 0px;
+}
+
+.mt0 {
+  margin-top: 0px;
+}
+
+.pr0 {
+  padding-right: 0px;
+}
+
+.pl0 {
+  padding-left: 0px;
+}
+
+.pb0 {
+  padding-bottom: 0px;
+}
+
+.pt0 {
+  padding-top: 0px;
+}
+
+.mr5 {
+  margin-right: 5px;
+}
+
+.ml5 {
+  margin-left: 5px;
+}
+
+.mb5 {
+  margin-bottom: 5px;
+}
+
+.mt5 {
+  margin-top: 5px;
+}
+
+.pr5 {
+  padding-right: 5px;
+}
+
+.pl5 {
+  padding-left: 5px;
+}
+
+.pb5 {
+  padding-bottom: 5px;
+}
+
+.pt5 {
+  padding-top: 5px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.pr10 {
+  padding-right: 10px;
+}
+
+.pl10 {
+  padding-left: 10px;
+}
+
+.pb10 {
+  padding-bottom: 10px;
+}
+
+.pt10 {
+  padding-top: 10px;
+}
+
+.mr15 {
+  margin-right: 15px;
+}
+
+.ml15 {
+  margin-left: 15px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.mt15 {
+  margin-top: 15px;
+}
+
+.pr15 {
+  padding-right: 15px;
+}
+
+.pl15 {
+  padding-left: 15px;
+}
+
+.pb15 {
+  padding-bottom: 15px;
+}
+
+.pt15 {
+  padding-top: 15px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.pr20 {
+  padding-right: 20px;
+}
+
+.pl20 {
+  padding-left: 20px;
+}
+
+.pb20 {
+  padding-bottom: 20px;
+}
+
+.pt20 {
+  padding-top: 20px;
+}
+
+.mr25 {
+  margin-right: 25px;
+}
+
+.ml25 {
+  margin-left: 25px;
+}
+
+.mb25 {
+  margin-bottom: 25px;
+}
+
+.mt25 {
+  margin-top: 25px;
+}
+
+.pr25 {
+  padding-right: 25px;
+}
+
+.pl25 {
+  padding-left: 25px;
+}
+
+.pb25 {
+  padding-bottom: 25px;
+}
+
+.pt25 {
+  padding-top: 25px;
+}
+
+.mr30 {
+  margin-right: 30px;
+}
+
+.ml30 {
+  margin-left: 30px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.pr30 {
+  padding-right: 30px;
+}
+
+.pl30 {
+  padding-left: 30px;
+}
+
+.pb30 {
+  padding-bottom: 30px;
+}
+
+.pt30 {
+  padding-top: 30px;
+}
+
+.mr35 {
+  margin-right: 35px;
+}
+
+.ml35 {
+  margin-left: 35px;
+}
+
+.mb35 {
+  margin-bottom: 35px;
+}
+
+.mt35 {
+  margin-top: 35px;
+}
+
+.pr35 {
+  padding-right: 35px;
+}
+
+.pl35 {
+  padding-left: 35px;
+}
+
+.pb35 {
+  padding-bottom: 35px;
+}
+
+.pt35 {
+  padding-top: 35px;
+}
+
+.mr40 {
+  margin-right: 40px;
+}
+
+.ml40 {
+  margin-left: 40px;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+
+.pr40 {
+  padding-right: 40px;
+}
+
+.pl40 {
+  padding-left: 40px;
+}
+
+.pb40 {
+  padding-bottom: 40px;
+}
+
+.pt40 {
+  padding-top: 40px;
+}
+
+.mr45 {
+  margin-right: 45px;
+}
+
+.ml45 {
+  margin-left: 45px;
+}
+
+.mb45 {
+  margin-bottom: 45px;
+}
+
+.mt45 {
+  margin-top: 45px;
+}
+
+.pr45 {
+  padding-right: 45px;
+}
+
+.pl45 {
+  padding-left: 45px;
+}
+
+.pb45 {
+  padding-bottom: 45px;
+}
+
+.pt45 {
+  padding-top: 45px;
+}
+
+.mr50 {
+  margin-right: 50px;
+}
+
+.ml50 {
+  margin-left: 50px;
+}
+
+.mb50 {
+  margin-bottom: 50px;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.pr50 {
+  padding-right: 50px;
+}
+
+.pl50 {
+  padding-left: 50px;
+}
+
+.pb50 {
+  padding-bottom: 50px;
+}
+
+.pt50 {
+  padding-top: 50px;
+}
+
+/*-- 横幅 --*/
+.wd5 {
+  width: 5%;
+}
+
+.wd10 {
+  width: 10%;
+}
+
+.wd15 {
+  width: 15%;
+}
+
+.wd20 {
+  width: 20%;
+}
+
+.wd25 {
+  width: 25%;
+}
+
+.wd30 {
+  width: 30%;
+}
+
+.wd35 {
+  width: 35%;
+}
+
+.wd40 {
+  width: 40%;
+}
+
+.wd45 {
+  width: 45%;
+}
+
+.wd50 {
+  width: 50%;
+}
+
+.wd55 {
+  width: 55%;
+}
+
+.wd60 {
+  width: 60%;
+}
+
+.wd65 {
+  width: 65%;
+}
+
+.wd70 {
+  width: 70%;
+}
+
+.wd75 {
+  width: 75%;
+}
+
+.wd80 {
+  width: 80%;
+}
+
+.wd85 {
+  width: 85%;
+}
+
+.wd90 {
+  width: 90%;
+}
+
+.wd95 {
+  width: 95%;
+}
+
+.wd100 {
+  width: 100%;
+}
+
+/*-- 回り込み解除 --*/
+.clear {
+  clear: both;
+}
+
+.float-l {
+  float: left;
+}
+
+.float-r {
+  float: right;
+}
+
+/*-- テキスト --*/
+.red-txt {
+  color: #FF0000;
+}
+
+.small-txt {
+  font-size: 1rem;
+}
+
+.bold-txt {
+  font-weight: bold;
+}
+
+.al-c {
+  text-align: center;
+}
+
+.al-l {
+  text-align: left;
+}
+
+.al-r {
+  text-align: right;
+}
+
+.fs10 {
+  font-size: 10px;
+}
+
+.fs12 {
+  font-size: 12px;
+}
+
+.fs14 {
+  font-size: 14px;
+}
+
+.fs16 {
+  font-size: 16px;
+}
+
+.fs18 {
+  font-size: 18px;
+}
+
+.fs20 {
+  font-size: 20px;
+}
+
+.fs22 {
+  font-size: 22px;
+}
+
+.fs24 {
+  font-size: 24px;
+}
+
+.fs26 {
+  font-size: 26px;
+}
+
+.fs28 {
+  font-size: 28px;
+}
+
+.fs30 {
+  font-size: 30px;
+}
+
+.img-bg {
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.hover:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+
+/*-- トップへ戻る CSS自由に調整してください --*/
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 77%;
+}
+#page-top a {
+  background: #666;
+  text-decoration: none;
+  color: #fff;
+  width: 100px;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+}
+#page-top a:hover {
+  text-decoration: none;
+  background: #999;
+}
+
+/*
+-----------------------------------------------------------------------
+style
+-----------------------------------------------------------------------
+*/
+#systembook .mainttl {
+  font-size: 36px;
+  font-size: 3.6rem;
+  font-weight: normal;
+  font-family: 'Noto Sans Japanese', sans-serif;
+  background: #fff url(../images/ttlbg.png) no-repeat center right;
+  padding: 12px 5% 12px 130px;
+  height: 80px;
+  border-bottom: 2px solid #0064ff;
+  position: relative;
+}
+#systembook .mainttl::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 80px;
+  background: #0064ff url(../images/bg.png);
+  background-size: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#systembook .mainttl::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 33px;
+  background: url(../images/folder.png) no-repeat;
+  background-size: 50px 33px;
+  position: absolute;
+  top: 22px;
+  left: 25px;
+}
+
+/*--------- MAIN ------------*/
+.content-inner {
+  width: 1326px;
+  margin: 30px auto;
+}
+.content-inner main {
+  width: 75%;
+  background: #fff;
+  box-shadow: 1px 2px 2px rgba(0, 53, 100, 0.2), inset 0 0 2px #f1f1f1, inset 0 0 2px #f1f1f1, inset 0 0 2px #f1f1f1;
+  margin-bottom: 60px;
+  float: left;
+}
+.content-inner main .mainarea .postttl01 {
+  font-size: 30px;
+  font-size: 3rem;
+  border: 2px solid #0064ff;
+  padding: 20px 10px 16px 90px;
+  background: #fff url(../images/i-disease.png) no-repeat 20px 18px;
+  background-size: 52px 52px;
+  position: relative;
+}
+.content-inner main .mainarea .postttl01::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 6px;
+  background: #0064ff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.content-inner main .mainarea .postttl02 {
+  font-size: 30px;
+  font-size: 3rem;
+  border: 2px solid #00a4ff;
+  padding: 20px 10px 16px 90px;
+  background: #fff url(../images/i-examinatio.png) no-repeat 20px 18px;
+  background-size: 52px 52px;
+  position: relative;
+}
+.content-inner main .mainarea .postttl02::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 6px;
+  background: #00a4ff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.content-inner main .mainarea .postttl03 {
+  font-size: 20px;
+  font-size: 2rem;
+  padding: 10px 10px 10px 25px;
+  margin-bottom: 20px;
+  background: #ecf2fb url(../images/ttl-left.png) repeat-y;
+}
+.content-inner main .mainarea .inner {
+  padding: 30px 20px;
+  line-height: 1.8;
+}
+.content-inner main .mainarea .inner p {
+  margin: 0 10px 20px;
+}
+.content-inner main .mainarea .inner .full-w {
+  display: block;
+  width: 98%;
+  margin: 30px auto;
+}
+.content-inner main .mainarea .inner .list {
+  margin: 20px 10px;
+}
+.content-inner main .mainarea .inner .list li {
+  margin-bottom: 10px;
+}
+.content-inner main .mainarea .inner .list li:first-letter {
+  color: #0064ff;
+  display: inline-block;
+  margin-right: 5px;
+}
+.content-inner .pc-side {
+  width: 23%;
+  margin-right: 2%;
+  float: left;
+}
+.content-inner .pc-side nav {
+  background: #fff;
+  box-shadow: 1px 2px 2px rgba(0, 53, 100, 0.2), inset 0 0 2px #f1f1f1, inset 0 0 2px #f1f1f1, inset 0 0 2px #f1f1f1;
+  margin-bottom: 20px;
+}
+.content-inner .pc-side nav .sidettl01 {
+  background: #0064ff url(../images/bg.png);
+  background-size: 28px;
+  font-size: 20px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  padding: 10px 0 10px 50px;
+  color: #fff;
+  text-shadow: 0 0 4px rgba(37, 96, 191, 0.6);
+  font-family: 'Noto Sans Japanese', sans-serif;
+  position: relative;
+}
+.content-inner .pc-side nav .sidettl01::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url(../images/disease.png) no-repeat;
+  background-size: 32px 32px;
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+.content-inner .pc-side nav .sidettl02 {
+  background: #00a4ff url(../images/bg.png);
+  background-size: 28px;
+  font-size: 20px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 4px #58a0c7;
+  padding: 10px 0 10px 50px;
+  color: #fff;
+  font-family: 'Noto Sans Japanese', sans-serif;
+  position: relative;
+}
+.content-inner .pc-side nav .sidettl02::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 30px;
+  background: url(../images/examinatio.png) no-repeat;
+  background-size: 28px 30px;
+  position: absolute;
+  top: 10px;
+  left: 14px;
+}
+.content-inner .pc-side nav .menulist {
+  margin: 20px 20px 20px;
+  padding-bottom: 20px;
+}
+.content-inner .pc-side nav .menulist li {
+  margin-bottom: 10px;
+}
+.content-inner .pc-side nav .menulist li a {
+  display: block;
+  padding-left: 25px;
+  background: url(../images/box-r.png) no-repeat center left;
+  background-size: 15px;
+}
+.content-inner ul.accordion {
+  width: 100%;
+  margin: 0 auto 30px;
+  padding: 20px 10px;
+  font-size: 16px;
+}
+.content-inner ul.accordion a {
+  display: block;
+  padding: 8px 10px;
+  background-position: 97% center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+.content-inner ul.accordion span {
+  display: block;
+  padding: 10px;
+  background-position: 95% center;
+  background-repeat: no-repeat;
+}
+.content-inner ul.accordion ul {
+  display: none;
+}
+.content-inner ul.accordion > li {
+  margin-bottom: 20px;
+}
+.content-inner ul.accordion > li > p {
+  background: #ecf2fb;
+  border: 1px solid #0064ff;
+  cursor: pointer;
+}
+.content-inner ul.accordion > li > p span {
+  background-image: url(../images/open.png);
+  background-size: 26px 38px;
+}
+.content-inner ul.accordion > li > p span.open {
+  background-image: url(../images/close.png);
+  background-size: 26px 38px;
+}
+.content-inner ul.accordion > li > ul {
+  padding: 10px 0;
+  border-left: 1px solid #0064ff;
+  border-right: 1px solid #0064ff;
+  border-bottom: 1px solid #0064ff;
+}
+.content-inner ul.accordion > li > ul > li {
+  background: #fff;
+}
+.content-inner ul.accordion > li > ul > li > p {
+  background: #999;
+}
+.content-inner ul.accordion > li > ul > li > a {
+  padding-left: 45px;
+  background: url(../images/box-r.png) no-repeat 16px center;
+  background-size: 16px;
+}
+.content-inner ul.accordion > li > ul > li > ul.inmenu {
+  display: block;
+}
+.content-inner ul.accordion > li > ul > li > ul.inmenu > li {
+  background: url(../images/right.png) no-repeat 35px center;
+  background-size: 8px 10px;
+}
+.content-inner ul.accordion > li > ul > li > ul.inmenu > li a {
+  padding-left: 50px;
+}
+.content-inner #symptom {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #systembook .mainttl {
+    font-size: 22px;
+    font-size: 2.2rem;
+    padding: 20px 10px 10px 60px;
+    background: #fff url(../images/ttlbg-sp.png) no-repeat center right;
+    height: 90px;
+    line-height: 1;
+  }
+  #systembook .mainttl span {
+    display: block;
+  }
+  #systembook .mainttl::before {
+    width: 50px;
+    height: 90px;
+  }
+  #systembook .mainttl::after {
+    background-size: 30px 22px;
+    top: 35px;
+    left: 10px;
+  }
+
+  .pc-side {
+    display: none !important;
+  }
+
+  .content-inner {
+    width: 100%;
+    margin: 0;
+  }
+  .content-inner main {
+    width: 100%;
+  }
+  .content-inner main .mainarea .postttl01 {
+    font-size: 20px;
+    font-size: 2rem;
+    padding: 20px 10px 18px 55px;
+    background-size: 36px;
+    background-position: 10px 18px;
+    border-width: 1px;
+  }
+  .content-inner main .mainarea .postttl03 {
+    font-size: 18px;
+    font-size: 1.8rem;
+    padding: 8px 10px 8px 20px;
+  }
+  .content-inner main .mainarea .inner {
+    width: 96%;
+    margin: 30px auto;
+    padding: 0;
+  }
+  .content-inner main .mainarea .inner p {
+    margin-bottom: 20px;
+  }
+  .content-inner main .mainarea .inner .full-w {
+    margin: 20px auto;
+  }
+  .content-inner aside {
+    width: 100%;
+  }
+  .content-inner #symptom {
+    display: inline-block !important;
+    position: relative;
+    width: 100%;
+    margin: 20px 0 15px;
+  }
+  .content-inner #symptom .symptom-block {
+    display: block;
+    float: left;
+    width: 48%;
+  }
+  .content-inner #symptom .symptom-block:first-child {
+    margin-right: 4%;
+  }
+  .content-inner #symptom .symptom-block .symptom-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .content-inner #symptom .symptom-block .symptom-btn#leftBtn {
+    background: #0064ff url(../images/bg.png);
+    background-size: 30px;
+  }
+  .content-inner #symptom .symptom-block .symptom-btn#leftBtn span {
+    display: block;
+    position: relative;
+  }
+  .content-inner #symptom .symptom-block .symptom-btn#leftBtn span::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/disease.png) no-repeat;
+    background-size: 30px;
+    position: absolute;
+    top: -4px;
+    left: 15%;
+  }
+  .content-inner #symptom .symptom-block .symptom-btn#rightBtn {
+    background: #00a4ff url(../images/bg.png);
+    background-size: 30px;
+  }
+  .content-inner #symptom .symptom-block .symptom-btn#rightBtn span {
+    display: block;
+    position: relative;
+  }
+  .content-inner #symptom .symptom-block .symptom-btn#rightBtn span::after {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 30px;
+    background: url(../images/examinatio.png) no-repeat;
+    background-size: 28px 30px;
+    position: absolute;
+    top: -4px;
+    left: 15%;
+  }
+  .content-inner #symptom .symptom-block .symptom-inner {
+    display: none;
+    z-index: 9999;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 2px 0 3px #00315a;
+  }
+  .content-inner #symptom .symptom-block .clicked {
+    display: block;
+  }
+  .content-inner #symptom .symptom-block .menulist {
+    margin: 0;
+    background: #fff;
+  }
+  .content-inner #symptom .symptom-block .menulist li {
+    margin-bottom: 0;
+  }
+  .content-inner #symptom .symptom-block .menulist li:last-child a {
+    border-bottom: 1px solid #0064ff;
+  }
+  .content-inner #symptom .symptom-block .menulist li a {
+    display: block;
+    border: 1px solid #0064ff;
+    border-bottom: none;
+    height: 48px;
+    padding: 13px 10px 12px 40px;
+    background: url(../images/box-r.png) no-repeat 15px center;
+    background-size: 15px;
+    position: relative;
+  }
+  .content-inner #symptom .symptom-block .menulist li a::before {
+    content: "";
+    width: 20px;
+    height: 48px;
+    background: #ecf2fb url(../images/right.png) no-repeat 50% center;
+    background-size: 6px 12px;
+    border-left: 1px solid #0064ff;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .content-inner #symptom .symptom-block ul.accordion {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .content-inner #symptom .symptom-block ul.accordion a {
+    display: block;
+    padding: 8px 10px;
+    background-position: 97% center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+  }
+  .content-inner #symptom .symptom-block ul.accordion span {
+    display: block;
+    padding: 14px;
+    background-position: 96% center;
+    background-repeat: no-repeat;
+  }
+  .content-inner #symptom .symptom-block ul.accordion ul {
+    display: none;
+  }
+  .content-inner #symptom .symptom-block ul.accordion > li {
+    margin-bottom: 20px;
+    border: 1px solid #0064ff;
+  }
+  .content-inner #symptom .symptom-block ul.accordion > li > p {
+    background: #ecf2fb;
+    border: none;
+    border-bottom: 1px solid #0064ff;
+    cursor: pointer;
+  }
+  .content-inner #symptom .symptom-block ul.accordion > li > p span {
+    background-image: url(../images/open.png);
+    background-size: 26px 38px;
+  }
+  .content-inner #symptom .symptom-block ul.accordion > li > p span.open {
+    background-image: url(../images/close.png);
+    background-size: 26px 38px;
+  }
+  .content-inner #symptom .symptom-block ul.accordion > li > ul {
+    width: 92%;
+    margin: 20px auto;
+    padding: 0;
+    background: #fff;
+    border: 1px solid #0064ff;
+  }
+  .content-inner #symptom .symptom-block ul.accordion > li > ul > li {
+    background: #fff;
+  }
+  .content-inner #symptom .symptom-block ul.accordion > li > ul > li:not(:last-child) {
+    border-bottom: 1px solid #0064ff;
+  }
+  .content-inner #symptom .symptom-block ul.accordion > li > ul > li > p {
+    background: #999;
+  }
+  .content-inner #symptom .symptom-block ul.accordion > li > ul > li > a {
+    display: block;
+    border-bottom: none;
+    height: 48px;
+    padding: 13px 10px 12px 40px;
+    background: url(../images/box-r.png) no-repeat 15px center;
+    background-size: 15px;
+    position: relative;
+  }
+  .content-inner #symptom .symptom-block ul.accordion > li > ul > li > a::before {
+    content: "";
+    width: 20px;
+    height: 48px;
+    background: #ecf2fb url(../images/right.png) no-repeat 50% center;
+    background-size: 6px 12px;
+    border-left: 1px solid #0064ff;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .content-inner #symptom .symptom-block ul.accordion > li > ul > li > ul.inmenu {
+    display: block !important;
+  }
+  .content-inner #symptom .symptom-block ul.accordion > li > ul > li > ul.inmenu > li {
+    background: url(../images/right.png) no-repeat 25px center;
+    background-size: 8px 10px;
+    border-bottom: 1px dotted #0064ff;
+  }
+  .content-inner #symptom .symptom-block ul.accordion > li > ul > li > ul.inmenu > li a {
+    padding: 15px 0 15px 40px;
+    position: relative;
+  }
+  .content-inner #symptom .symptom-block ul.accordion > li > ul > li > ul.inmenu > li a::before {
+    content: "";
+    width: 20px;
+    height: 51px;
+    background: #ecf2fb url(../images/right.png) no-repeat 50% center;
+    background-size: 6px 12px;
+    border-left: 1px solid #0064ff;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

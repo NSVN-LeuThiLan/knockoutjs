@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@import "compass";
+
+$font-family:"Avenir Next", Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, sans-serif;
+$txtcolor:#333333;
+$key-c:#333;
+$color01:#0064ff;
+$color02:#00a4ff;
+$color03:#c5f1f7;
+$bgcolor:#ecf2fb;
+$w-pc:1326px;
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+
+@mixin clear {
+	content:" ";
+	display:block;
+	clear:both;
+}
+
+@mixin rem($size) {
+    font-size: $size + px;
+    font-size: ($size / 10) * 1rem;
+}
+@mixin bg {
+	background:#fff;
+	box-shadow: 1px 2px 2px rgba(0,53,100,0.20),inset 0 0 2px #f1f1f1,inset 0 0 2px #f1f1f1,inset 0 0 2px #f1f1f1;
+}
