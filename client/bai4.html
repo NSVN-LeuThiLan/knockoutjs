@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Nếu không có ngày mai</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div data-bind="visible: shouldShowMessage">
+           このメッセージは "shouldShowMessage" が true を保持している場合にのみ表示されます。
+           message này chỉ hiển thị khi và chỉ khi shouldShowMessage là true
+        </div>
+
+        <p><strong data-bind="text: myViewModel()[0].personName"></strong></p>
+        <p><strong data-bind="text: myViewModel()[0].personAge"></strong></p>
+          <script src="libs/knockoutjs/dist/knockout.js" type="text/javascript"></script>
+          <script src="src3.js" type="text/javascript"></script>
+    </body>
+</html>

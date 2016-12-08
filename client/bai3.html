@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ai rồi cũng khác</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script src="libs/knockoutjs/dist/knockout.js" type="text/javascript"></script>   
+    </head>
+    <body>
+       <h1 data-bind="text: city"> </h1>
+<p data-bind="with: coords">
+    緯度(Vĩ độ): <span data-bind="text: latitude"> </span>,
+    経度(Kinh độ): <span data-bind="text: longitude"> </span>
+</p>
+     
+<script type="text/javascript">
+    ko.applyBindings({
+        city: "ロンドン",
+        coords: {
+            latitude:  51.5001524,
+            longitude: -0.1262362
+        }
+    });
+</script>
+    
+    </body>
+</html>

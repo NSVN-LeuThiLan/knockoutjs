@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>KKK</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <center>
+        <h2> Your seat reservations</h2>
+    </center>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Passenger name</th><th>Meal</th><th>Surcharge</th><th></th>
+                    </tr>
+        
+                </thead>
+                <tbody data-bind="foreach: arrayStudent">
+                    <tr>
+                        <td><input data-bind="value: id"/></td>
+                        <td><select data-bind="options:$root.student,value:mx,optionsText: 'name'"></select> </td>
+                        <td data-bind="text: mx().email"></td>
+                        <!--<td><a  data-bind="click:$root.remove">Remove</a></td>-->
+                    </tr>
+                </tbody>
+            </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th><th>Name</th><th>Email</th><th></th>
+            </tr>
+
+        </thead>
+        <tbody data-bind="foreach: arrayStudent" >
+            <tr>
+                <td data-bind="text: id"></td>
+                <td><select data-bind="options:$root.student,value:mx,optionsText: 'name'"></select></td>
+                <td data-bind="text: email"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--    <p><strong data-bind="text: totalSurcharge"></strong></p>
+        <button data-bind="click: addSeat, enable: seats().length < 5">Reserve another seat</button>
+    
+        <h3 data-bind="visible: totalSurcharge() > 0">
+            Total surcharge: $<span data-bind="text: totalSurcharge().toFixed(2)"></span>
+        </h3>-->
+    <!--    <button data-bind="click:addSeat1">Reserve another seat</button>-->
+    <script src="libs/knockoutjs/dist/knockout.js" type="text/javascript"></script>
+    <script src="src1.js" type="text/javascript"></script>
+</body>
+</html>

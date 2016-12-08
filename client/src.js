@@ -2,27 +2,19 @@
 (function () {
 
     function App() {
-          var self = this;
-      self.xxx= function(data, event) {
-            if (event.shiftKey) {
-                document.getElementById("hehe").innerText="hehe";
-            } else {
-                document.getElementById("hehe").innerText="haha";
-            }
-        };
-        self.arr=ko.observableArray([
-            
-            {name: "socola", supplier: "Germany"},
-            {name:"candy", supplier:"Hoa Binh"},
-            {name:"Moc Chau Milk", supplier:"Moc Chau"}
-   
-        ]);
-       
-      
-
-
+        this.lastName=ko.observable("Leu");
+        this.firstName=ko.observable("Lan");  
+//        this.fullName=ko.computed(function () {
+//            return this.firstName + " "+ this.lastName;
+//        },this);
+        this.fullName = ko.computed(function() {
+            return this.firstName() + " " + this.lastName();    
+        }, this);
+        this.cap = function() {
+        var currentVal = this.lastName();        // Read the current value
+        this.lastName(currentVal.toUpperCase()); // Write back a modified value
+         };
     }
-
     ko.applyBindings(new App());
 
 })();
