@@ -40,6 +40,7 @@ function ReservationsViewModel() {
         new SeatReservation1("2", self.student[1]),
         new SeatReservation1("3", self.student[2])
     ]);
+    ko.components.register()
 
 
 

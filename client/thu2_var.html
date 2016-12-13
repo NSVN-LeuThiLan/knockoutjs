@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>You've clicked <span data-bind='text: numberOfClicks'>&nbsp;</span> times</div>
+
+        <button data-bind='click: registerClick, disable: hasClickedTooManyTimes'>Click me</button>
+
+        <div data-bind='visible: hasClickedTooManyTimes'>
+            That's too many clicks! Please stop before you wear out your fingers.
+            <button data-bind='click: resetClicks'>Reset clicks</button>
+        </div>
+
+        <script src="libs/knockoutjs/dist/knockout.js" type="text/javascript"></script>
+        <script src="thu2_var.js" type="text/javascript"></script>
+    </body>
+</html>
